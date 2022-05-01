@@ -21,6 +21,14 @@ class Store {
       .promise()
       .query("INSERT INTO employee SET ?", newEmployee);
   }
+
+  // viewEmpByDept() {}
+
+  // removeEmployee() {
+  //   return this.connection
+  //     .promise()
+  //     .query("DELETE FROM employee SET ?", removedEmployee);
+  // }
 }
 
 module.exports = new Store(connection);
